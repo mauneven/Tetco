@@ -54,8 +54,8 @@ h6 {
 @media(max-width:1000px) {
   .title1{
 
-    font-size: 3em;
-
+    font-size: 1.7em;
+    text-align: center;
   }
   }
 
@@ -122,8 +122,8 @@ h6 {
 .navbar-default .nav li a:focus {
     outline: 0;
     color: var(--title-color);
-    transition: .5s;
-    background-color: rgba(134, 134, 134, 0.11);
+    transition: .3s;
+    background-color: rgba(134, 134, 134, 0.055);
     border-radius: 4px;
     
 }
@@ -443,6 +443,7 @@ a.current_dot {
 
   max-width: 300px;
   padding: 0em;
+  margin-bottom: 20px;
 
 }
 
