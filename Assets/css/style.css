@@ -1,10 +1,16 @@
+html{
+
+  scroll-behavior: smooth;
+
+}
+
 body {
     overflow-x: hidden;
     font-family: 'Inter', sans-serif;
     --color-paragraph: black;
     --title-color: #dfb21d;
     --color-title: #dfb21d;
-    --background-color-3: rgba(255, 255, 255, 0.562);
+    --background-color-3: rgb(255, 255, 255);
     }
 
 .text-muted {
@@ -35,11 +41,28 @@ h6 {
     font-weight: 800;
 }
 
+.megatitle2{
+
+  padding-top: 1em;
+  font-size: 3em;
+  color: var(--color-title);
+
+}
+
+@media(max-width:1000px) {
+  .megatitle2{
+
+    font-size: 2.5em;
+    text-align: center;
+  }
+  }
+
 .title1{
 
   font-size: 3em;
   color: var(--color-title);
-  padding: 1em;
+  padding-top: 2em;
+  padding-bottom: 1em;
 
 }
 
@@ -59,6 +82,22 @@ h6 {
   box-shadow: 2px 40px 20px solid black;
 
 }
+
+.title3{
+
+  font-size: 2em;
+  color: var(--color-title);
+  text-align: center;
+
+}
+
+@media(max-width:1000px) {
+  .title3{
+
+    font-size: 2.5em;
+    text-align: center;
+  }
+  }
 
 .megatitle{
 
@@ -338,6 +377,8 @@ section h3.section-subheading {
   vertical-align: middle;
   text-align: center;
   color: #fff;
+  align-content: center;
+  align-items: center;
 }
 
 li.current h3,
@@ -515,6 +556,7 @@ a.current_dot {
   color: #000000;
   box-shadow: 0 0 40px 0 rgba(0,0,0,.05);
 }
+
 .card__wrapper:after {
   content: '';
   position: absolute;
@@ -536,7 +578,7 @@ a.current_dot {
 }
 .card__item  {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding: 0;
 }
 .card__item--small  {
@@ -636,14 +678,15 @@ a.current_dot {
 .cta{
 
   font-size: 15px;
-  display: block;
+  display: flexbox;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 7px;
   text-decoration: none;
   font-weight: 500;
-  background-color: var(--color-title);
+  background-color: rgb(233, 233, 233);
   color: var(--color-paragraph);
   text-decoration-style: none;
+  width: 300px;
 
 }
 
@@ -660,8 +703,8 @@ a.current_dot {
 
 .cta:hover{
 
-  background-color: #b68b00;
-  transition: 0.5s;
+  background-color: var(--color-title);
+  transition: 0.6s;
   color: white;
 
 }
@@ -778,14 +821,14 @@ a.current_dot {
 
 .vm__element{
 
-  background-color: rgb(255, 251, 238);
+  background-color: rgb(243, 243, 241);
   text-align: center;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 400px;
   padding: 40px;
   font-size: 1rem;
-  box-shadow: 0px 0px 30px #0000004e;
-  border: 1px solid black;
+  box-shadow: 0px 0px 70px #00000023;
+  border: 1px solid rgba(0, 0, 0, 0.185);
 
 }
 
@@ -838,6 +881,141 @@ a.current_dot {
 
 } 
 
+
+/********** EVENTS ***************/
+
+.eventssection{
+  display:flex;
+  margin:0;
+  padding:0;
+  min-height: 100vh;
+  background: rgb(236, 236, 236);
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.eventscontainer{
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  align-content: center;
+  gap: 2em;
+  
+}
+
+.eventscontainer .eventscard{
+  position: relative;
+  justify-content: center;
+}
+
+.eventscontainer .eventscard .face{
+  width:300px;
+  height: 200px;
+  transition:.4s;
+  
+}
+
+.eventscontainer .eventscard .face.face1{
+  position: relative;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+  border: 1px solid rgba(0, 0, 0, 0.253);
+}
+
+.eventscontainer .eventscard:hover .face.face1{
+
+  transform: translateY(0);
+  box-shadow:
+    inset 0 0 60px #fffcf2,
+    inset 20px 0 80px var(--background-color-3),
+    inset -20px 0 80px #dfb21d93,
+    inset 20px 0 300px var(--background-color-3),
+    inset -20px 0 300px #dfb21d83,
+    0 0 50px var(--background-color-3),
+    -10px 0 80px #dfb21d8f,
+    10px 0 80px var(--color-title);
+   
+}
+
+
+.eventscontainer .eventscard .face.face1 .eventscontent{
+  opacity: 1;
+  transition:  0.5s;
+  text-align: center;
+
+}
+
+.eventscontainer .eventscard:hover .face.face1 .eventscontent{
+  opacity: 1;
+ 
+}
+
+.eventscontainer .eventsard .face.face1 .eventscontent i{
+  font-size: 4em;
+  color: var(--color-paragraph);
+  display: inline-block;
+   
+}
+
+.eventscontainer .card .face.face1 .eventscontent h3{
+  font-size: 1em;
+  color: var(--color-paragraph);
+  text-align: center;
+  
+
+}
+
+.eventscontainer .eventscard .face.face1 .eventscontent a{
+   transition: .5s;
+}
+
+.eventscontainer .eventscard .face.face2{
+   position: relative;
+   background: var(--background-color-3);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+  box-sizing: border-box;
+  box-shadow: var(--box-shadow);
+  transform: translateY(-100px);
+  border: var(--border);
+}
+
+.eventscontainer .eventscard:hover .face.face2{
+    transform: translateY(0);
+}
+
+.eventscontainer .eventscard .face.face2 .eventscontent p, a{
+  font-size: 10pt;
+  margin: 0 ;
+  padding: 0;
+  color: var(--color-paragraph);
+}
+
+.eventscontainer .card .face.face2 .eventscontent a{
+  text-decoration:none;
+  color: var(--color-paragraph);
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+
+.eventscontainer .card .face.face2 .eventscontent a:hover{
+  background: var(--background-color-1) ;
+  color: var(--color-paragraph); 
+  box-shadow: var(--box-shadow);
+}
 
 /******* FOOTER ********/
 
