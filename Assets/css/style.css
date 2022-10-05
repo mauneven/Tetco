@@ -8,7 +8,7 @@ body {
     }
 
 .text-muted {
-    color: rgb(43, 43, 43);
+    color: rgb(0, 0, 0);
 }
 
 .text-primary {
@@ -22,14 +22,6 @@ p {
 
 p.large {
     font-size: 16px;
-}
-
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-    outline: 0;
 }
 
 h1,
@@ -76,8 +68,8 @@ h6 {
 }
 
 .navbar-default {
-    border-color: transparent;
     background-color: rgb(255, 255, 255);
+  
 }
 .navbar-default .navbar-brand {
   font-family: 'Inter', sans-serif;
@@ -110,7 +102,7 @@ h6 {
     background-color: var(--title-color);
 }
 
-.navbar-default .nav li a {
+.navbar-default .nav li {
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;;
     font-weight: 500;
@@ -123,26 +115,14 @@ h6 {
     outline: 0;
     color: var(--title-color);
     transition: .3s;
-    background-color: rgba(134, 134, 134, 0.055);
+    background-color: rgba(0, 0, 0, 0.055);
     border-radius: 4px;
     
 }
 
-.navbar-default .navbar-nav>.active>a {
-    border-radius: 0;
-    color: #fff;
-    background-color: var(--title-color);
-}
-
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: var(--title-color);
-}
-
 .logo__image{
 
-    width: 30px;
+    width: 33px;
     height: auto;
 
 }
@@ -166,6 +146,7 @@ h6 {
 
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;
+        background-color: #00000010;
     }
 
     .navbar-default.navbar-shrink {
@@ -317,7 +298,6 @@ section h3.section-subheading {
   letter-spacing: 2px;
   display: inline-block;
   text-transform: uppercase;
-  font-family: sans-serif;
   margin-bottom: 4rem;
 }
 
@@ -685,6 +665,180 @@ a.current_dot {
   color: white;
 
 }
+
+.icons1{
+
+  color: var(--color-title);
+  font-size: 100px;
+
+}
+
+.about{
+
+  text-align: center;
+  background-color: var(--background-color-1);
+  padding: 4em;
+  
+}
+
+.subtitle {
+
+  color: var(--color-title);
+  text-align: center;
+
+}
+
+.cool-text{
+
+  animation-duration: 1s;
+
+}
+
+.cool-text2{
+
+  font-size: 20px;
+  color: var(--color-paragraph);
+
+}
+
+.about__paragraph{
+
+  line-height: 1;
+  width: 100%;
+  color: var(--color-paragraph);
+  font-size: 19px;
+
+}
+
+.about__title{
+
+  color: var(--color-title);
+  font-size: 25px;
+
+}
+
+
+.about__main{
+
+  padding-top: 20px;
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  gap: 1em;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto) );
+}
+
+.about__icons{
+  display: grid;
+  gap: 1em;
+  justify-items: center;
+  width: 200px;
+  overflow: hidden;
+  margin: auto;
+  cursor: pointer;
+  
+}
+
+.vm{
+
+  padding: 3em;
+  text-align: center;
+  background-color: var(--background-color-1);
+  align-items: flex-start;
+  min-height: 100%;
+  justify-content: center;
+  padding: 3em;
+  background-image:  radial-gradient(var(--color-title) 2px, transparent 2px);
+  background-size: 80px 80px;
+  background-attachment: fixed;
+
+
+}
+
+.vm__title{
+
+  font-size: 3.5rem;
+  color: var(--color-paragraph);
+  text-shadow: 5px 5px 40px rgb(0, 0, 0);
+
+}
+
+.vm__table{
+
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5em;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--background-color-3);
+
+}
+
+.vm__element{
+
+  background-color: rgb(255, 251, 238);
+  text-align: center;
+  border-radius: 20px;
+  width: 400px;
+  padding: 40px;
+  font-size: 1rem;
+  box-shadow: 0px 0px 30px #0000004e;
+  border: 1px solid black;
+
+}
+
+.vm__name{
+
+  color: var(--color-title);
+  margin-bottom: 15px;
+  font-weight: 350;
+  font-size: 3.5em;
+
+}
+
+.vm__items{
+
+  margin-top: 30px;
+  display: grid;
+  gap: 1em;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  color: var(--color-items);
+
+}
+
+.vm__cta{
+
+  display: block;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  border: var(--border);
+  background-color: var(--background-color-3);
+  color: var(--color-paragraph);
+
+}
+
+.vm__features{
+
+  text-align:justify;
+  color: var(--color-paragraph);
+  
+}
+
+.vm__features__sub{
+
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+
+} 
+
+
 /******* FOOTER ********/
 
 .site-footer {
