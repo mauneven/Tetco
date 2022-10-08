@@ -59,16 +59,16 @@ h6 {
 
 .title1{
 
+  padding-top: 1.5em;
   font-size: 3em;
   color: var(--color-title);
-  padding-top: 2em;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 
 }
 
 @media(max-width:1000px) {
   .title1{
-
+    padding-top: 2.7em;
     font-size: 1.7em;
     text-align: center;
   }
@@ -935,7 +935,7 @@ a.current_dot {
 
   transform: translateY(0);
   box-shadow:
-    inset 0 0 60px #fffcf2,
+    inset 0 0 60px #fffdf7,
     inset 20px 0 80px var(--background-color-3),
     inset -20px 0 80px #dfb21d93,
     inset 20px 0 300px var(--background-color-3),
@@ -1017,6 +1017,160 @@ a.current_dot {
   box-shadow: var(--box-shadow);
 }
 
+/****************** CONTACT *************************/
+
+/* ------------- */
+/* GLOBAL STYLES */
+/* ------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+.contactbody {
+  background: var(--background-color-1);
+  color: var(--color-title);
+  line-height: 1.6;
+}
+
+.contactcontainer {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.brand {
+  text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.brand span {
+  color: #ffffff;
+}
+
+.wrapper {
+  box-shadow: 0px 10px 50px 0 rgba(163, 144, 57, 0.7);
+}
+
+.wrapper > * {
+  padding: 0em;
+}
+
+/* ------------------- */
+/* COMPANY INFORMATION */
+/* ------------------- */
+
+.company-info {
+  background: #fffef6;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.company-info h3,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+/* ------- */
+/* CONTACT */
+/* ------- */
+
+.contact {
+  background: #f1f1f1;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* ---- */
+/* FORM */
+/* ---- */
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact form label {
+  display: block;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: solid 1px var(--color-title);
+  border-radius: 4px;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form button {
+  background: rgb(248, 248, 248);
+  border: 0;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: var(--color-title);
+  color: #ffffff;
+  outline: 0;
+  transition: background-color 0.3s ease-in;
+}
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media only screen and (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .contact {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
+
+
 /******* FOOTER ********/
 
 .site-footer {
@@ -1044,7 +1198,7 @@ a.current_dot {
     color: var(--color-paragraph);
   }
   .site-footer a:hover {
-    color: var(--color-title);
+    color: var(--title-color);
     text-decoration: none;
     background-color: rgba(201, 201, 201, 0);
     border-radius: 8px;
